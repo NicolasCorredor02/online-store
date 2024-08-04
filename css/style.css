@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --pricipal-color: rgb(241, 193, 26);
+  --secondary-color: rgb(255, 255, 255);
+  --tertiary-color: rgb(0, 0, 0);
+}
+/* estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* estilos para botones */
+
+.principal-button {
+  color: var(--secondary-color);
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  align-content: center;
+  text-align: center;
+}
+
+.principal-button:hover {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  padding: 1rem 2.5rem;
+  color: var(--tertiary-color);
+}
+
+.secondary-button {
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  align-content: center;
+  text-align: center;
+}
+
+.secondary-button:hover {
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+}
+.tertiary-button {
+  color: var(--secondary-color);
+  font-weight: bold;
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
+  padding: 0.5rem 2.5rem;
+  border-radius: 2rem;
+  height: 45%;
+  text-decoration: none;
+  align-content: center;
+  text-align: center;
+}
+
+.tertiary-button:hover {
+  color: var(--tertiary-color);
+  background-color: var(--pricipal-color);
+  border: 2px solid var(--pricipal-color);
+  padding: 0.5rem 2.5rem;
+  border-radius: 2rem;
+}
+
+.fourth-button {
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  border: 2px solid var(--tertiary-color);
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  align-content: center;
+  text-align: center;
+}
+
+.fourth-button:hover {
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+}
+
+/* estilos card-large index */
+.card-large {
+  color: var(--secondary-color);
+  height: 50rem;
+  width: 100%;
+}
+
+.card-large__img {
+  padding: 0;
+}
+
+.card-large__details {
+  bottom: 50px;
+}
+
+/* estilos new index */
+
+.new__title a {
+  color: var(--tertiary-color);
+}
+
+.card {
+  min-width: 50%;
+  border: 0;
+}
+
+.carousel {
+  height: 45rem;
+  width: 100%;
+}
+
+.carousel__item {
+  position: relative;
+  height: 45rem;
+}
+
+.carousel__button {
+  left: 35%;
+  bottom: 50px;
+}
+
+/* estilos look combo index */
+
+.look-combo__detail {
+  height: 18rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* estilos menu shop */
+
+.menu-shop__button-container {
+  height: 3.5rem;
+  border: 2px solid #f2f2f2;
+  justify-content: center;
+}
+
+/* estilos clothes shop */
+
+.clothes {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+/* estilos clothing */
+
+.split {
+  display: grid;
+  min-height: 90vh;
+  margin-top: 5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.split__details {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.split-details__title,
+.split-details__body,
+.split-details__footer {
+  line-height: 150%;
+  padding: 20px 20px 0 20px;
+  gap: 10px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.split-details__body select,
+.split-details__body input {
+  font-size: 0.875rem;
+  border: 1px solid rgb(242, 242, 242);
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(242, 242, 242);
+  width: 100%;
+  outline: rgba(0, 0, 0, 0);
+  border-radius: 0.5rem;
+  text-overflow: ellipsis;
+}
+
+/* estilos footer */
+
+footer {
+  background-color: var(--tertiary-color);
+}
+
+footer a {
+  color: var(--pricipal-color);
+  text-decoration: none;
+}
+
+.footer__contact,
+.footer__info {
+  color: var(--pricipal-color);
+}
+
+.footer__contact input {
+  height: 20%;
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid var(--pricipal-color);
+  border-radius: 5px;
+  color: var(--pricipal-color);
+  outline: var(--pricipal-color);
+}
+
+.footer__contact input::placeholder {
+  color: var(--pricipal-color);
+}
+
+.footer__contact [type="email"]:focus {
+  background-color: transparent;
+  border: 2px solid var(--pricipal-color);
+  color: var(--secondary-color);
+}
+
+.footer__help,
+.footer__about {
+  color: var(--pricipal-color);
+  border-top: 2px solid var(--pricipal-color);
+  background-color: transparent;
+}
+
+/* MQ for desktop screen */
+@media screen and (min-width: 992px) {
+  .card {
+    min-width: 25%;
+    border: 0;
+  }
+
+  .menu {
+    justify-content: space-between;
+  }
+
+  .menu-hamburger__button,
+  .menu-shop__button-filter {
+    display: none;
+  }
+
+  .menu-shop__button-container {
+    height: 3.5rem;
+    border: none;
+    justify-content: end;
+  }
+
+  .canvas__body li,
+  .menu-shop__button-container,
+  .menu-shop__button-container ul {
+    font-size: 1.5rem;
+  }
+
+  .clothes {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .split {
+    min-height: 60vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .split-details__title,
+  .split-details__body,
+  .split-details__footer {
+    margin: 10px 5rem;
+  }
+
+  .footer__contact {
+    border-right: 2px solid var(--pricipal-color);
+  }
+}
