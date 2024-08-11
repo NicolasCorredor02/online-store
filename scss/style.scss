@@ -1,45 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
 
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
+//Utilities Imports
+@import "utilities/root-styles";
+@import "utilities/buttons";
 
-a {
-  text-decoration: none;
-}
 
-.root-button, .principal-button {
-  padding: 1rem 2.5rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  align-content: center;
-  text-align: center;
-  cursor: pointer;
-}
-
-.principal-button {
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  border: 2px solid rgb(255, 255, 255);
-}
-
-.principal-button:hover {
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(255, 255, 255);
-  padding: 1rem 2.5rem;
-  color: rgb(0, 0, 0);
-}
+//Buttons styles
 
 /* estilos para botones */
+
+
 /* estilos card-large index */
 .card-large {
   color: var(--secondary-color);
@@ -56,6 +25,7 @@ a {
 }
 
 /* estilos new index */
+
 .new__title a {
   color: var(--tertiary-color);
 }
@@ -81,6 +51,7 @@ a {
 }
 
 /* estilos look combo index */
+
 .look-combo__detail {
   height: 18rem;
   align-items: center;
@@ -88,6 +59,7 @@ a {
 }
 
 /* estilos menu shop */
+
 .menu-shop__button-container {
   height: 3.5rem;
   border: 2px solid #f2f2f2;
@@ -95,6 +67,7 @@ a {
 }
 
 /* estilos clothes shop */
+
 .clothes {
   margin-top: 10px;
   display: grid;
@@ -105,6 +78,7 @@ a {
 }
 
 /* estilos clothing */
+
 .split {
   display: grid;
   min-height: 90vh;
@@ -145,6 +119,7 @@ a {
 }
 
 /* estilos footer */
+
 footer {
   background-color: var(--tertiary-color);
 }
@@ -173,7 +148,7 @@ footer a {
   color: var(--pricipal-color);
 }
 
-.footer__contact [type=email]:focus {
+.footer__contact [type="email"]:focus {
   background-color: transparent;
   border: 2px solid var(--pricipal-color);
   color: var(--secondary-color);
@@ -192,40 +167,46 @@ footer a {
     min-width: 25%;
     border: 0;
   }
+
   .menu {
     justify-content: space-between;
   }
+
   .menu-hamburger__button,
   .menu-shop__button-filter {
     display: none;
   }
+
   .menu-shop__button-container {
     height: 3.5rem;
     border: none;
     justify-content: end;
   }
+
   .canvas__body li,
   .menu-shop__button-container,
   .menu-shop__button-container ul {
     font-size: 1.5rem;
   }
+
   .clothes {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
+
   .split {
     min-height: 60vh;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
   }
+
   .split-details__title,
   .split-details__body,
   .split-details__footer {
     margin: 10px 5rem;
   }
+
   .footer__contact {
     border-right: 2px solid var(--pricipal-color);
   }
 }
-
-/*# sourceMappingURL=style.css.map */

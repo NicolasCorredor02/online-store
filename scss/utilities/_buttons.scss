@@ -1,0 +1,61 @@
+@import "variables";
+
+.root-button{
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.principal-button {
+    @extend .root-button;
+    color: map-colors(secondary);
+    background-color: transparent;
+    border: 2px solid map-colors(secondary);
+    
+  }
+  
+   .principal-button:hover {
+     background-color: map-colors(secondary);
+     border: 2px solid map-colors(secondary);
+     padding: 1rem 2.5rem;
+     color: map-colors(tertiary);
+   }
+  
+//   .secondary-button {
+//     color: map(color,tertiary);
+//     background-color: map(colors,secondary);
+//     border: 2px solid map(colors,secondary);
+//   }
+  
+//   .secondary-button:hover {
+//     color: map(color,secondary);
+//     background-color: map(colors,tertiary);
+//     border: 2px solid map(colors,tertiary);
+//   }
+//   .tertiary-button {
+//     color: map(color,secondary);
+//     font-weight: bold;
+//     background-color: map(colors,tertiary);
+//     border: 2px solid map(colors,tertiary);
+//   }
+  
+//   .tertiary-button:hover {
+//     color: map(colors,tertiary);
+//     background-color: map(colors,primary);
+//     border: 2px solid map(colors,primary);
+//   }
+  
+//   .fourth-button {
+//     color: map(colors,tertiary);
+//     background-color: map(colors,secondary);
+//     border: 2px solid map(colors,tertiary);
+//   }
+  
+//   .fourth-button:hover {
+//     color: map(colors,secondary);
+//     background-color: map(colors,tertiary);
+//     border: 2px solid map(colors,tertiary);
+//   }

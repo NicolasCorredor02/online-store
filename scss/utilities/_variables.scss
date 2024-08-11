@@ -1,0 +1,19 @@
+//General function for access
+
+@function map-colors($key){
+  @return map-get($colors , $key)
+};
+
+
+//color map
+$colors:(
+  primary:rgb(241, 193, 26),
+  secondary: rgb(255, 255, 255),
+  tertiary: rgb(0, 0, 0)
+);
+
+
+@mixin measurements ($width, $height){
+  width: $width;
+  height: $height;
+}

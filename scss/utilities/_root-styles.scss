@@ -1,0 +1,21 @@
+@import "typography";
+@import "variables";
+//root styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $general-font;
+  }
+
+//images styles
+img {
+    @include measurements(100%, 100%);
+    object-fit: cover;
+    object-position: center;
+  }
+
+//link styles
+a {
+    text-decoration: none;
+  }

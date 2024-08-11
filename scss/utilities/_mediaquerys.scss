@@ -1,0 +1,14 @@
+//Medaquerys
+
+$breakpoints:(
+    sm:576px,
+    md:768px,
+    lg:992px
+);
+
+@mixin media-up($breakpoints){
+    @media screen and (min-width: map-get($breakpoints,$breakpoints)) {
+        @content;
+    }
+}
+
