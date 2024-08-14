@@ -1,0 +1,28 @@
+@import "variables";
+
+//Large cards
+.card-large {
+  color: get-color(secondary);
+  @include measurements(100%,50rem);
+
+  .card-large__img {
+    padding: get-space-size(0);
+  }
+  
+  .card-large__details {
+    bottom: 50px;
+  }
+
+}
+
+
+
+
+//Small cards
+.new__title a {
+    color: get-color(tertiary);
+  }
+.card {
+    min-width: 50%;
+    border: get-space-size(0);
+  }

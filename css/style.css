@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-.root-button, .principal-button {
+.root-button, .fourth-button, .tertiary-button, .secondary-button, .principal-button {
   padding: 1rem 2.5rem;
   border-radius: 2rem;
   text-decoration: none;
@@ -35,29 +35,60 @@ a {
 .principal-button:hover {
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 255, 255);
-  padding: 1rem 2.5rem;
   color: rgb(0, 0, 0);
 }
 
-/* estilos para botones */
-/* estilos card-large index */
-.card-large {
-  color: var(--secondary-color);
-  height: 50rem;
-  width: 100%;
+.secondary-button {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
 }
 
-.card-large__img {
+.secondary-button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.tertiary-button {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.tertiary-button:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(241, 193, 26);
+  border: 2px solid rgb(241, 193, 26);
+}
+
+.fourth-button {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.fourth-button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.card-large {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 50rem;
+}
+.card-large .card-large__img {
   padding: 0;
 }
-
-.card-large__details {
+.card-large .card-large__details {
   bottom: 50px;
 }
 
-/* estilos new index */
 .new__title a {
-  color: var(--tertiary-color);
+  color: rgb(0, 0, 0);
 }
 
 .card {
@@ -65,46 +96,24 @@ a {
   border: 0;
 }
 
-.carousel {
-  height: 45rem;
+.carousel, .carousel .carousel__item {
   width: 100%;
-}
-
-.carousel__item {
-  position: relative;
   height: 45rem;
 }
-
-.carousel__button {
+.carousel .carousel__item {
+  position: relative;
+}
+.carousel .carousel__button {
   left: 35%;
   bottom: 50px;
 }
 
-/* estilos look combo index */
 .look-combo__detail {
   height: 18rem;
   align-items: center;
   gap: 2rem;
 }
 
-/* estilos menu shop */
-.menu-shop__button-container {
-  height: 3.5rem;
-  border: 2px solid #f2f2f2;
-  justify-content: center;
-}
-
-/* estilos clothes shop */
-.clothes {
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  row-gap: 10px;
-  column-gap: 10px;
-}
-
-/* estilos clothing */
 .split {
   display: grid;
   min-height: 90vh;
@@ -124,8 +133,8 @@ a {
 .split-details__body,
 .split-details__footer {
   line-height: 150%;
-  padding: 20px 20px 0 20px;
   gap: 10px;
+  padding: 20px 20px 0 20px;
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
@@ -144,6 +153,25 @@ a {
   text-overflow: ellipsis;
 }
 
+/* estilos look combo index */
+/* estilos menu shop */
+.menu-shop__button-container {
+  height: 3.5rem;
+  border: 2px solid #f2f2f2;
+  justify-content: center;
+}
+
+/* estilos clothes shop */
+.clothes {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+/* estilos clothing */
 /* estilos footer */
 footer {
   background-color: var(--tertiary-color);

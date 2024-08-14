@@ -1,62 +1,15 @@
-
 //Utilities Imports
+@import "utilities/font";
 @import "utilities/root-styles";
 @import "utilities/buttons";
+@import "utilities/cards";
+@import "utilities/carousel";
+@import "utilities/split";
 
-
-//Buttons styles
-
-/* estilos para botones */
-
-
-/* estilos card-large index */
-.card-large {
-  color: var(--secondary-color);
-  height: 50rem;
-  width: 100%;
-}
-
-.card-large__img {
-  padding: 0;
-}
-
-.card-large__details {
-  bottom: 50px;
-}
-
-/* estilos new index */
-
-.new__title a {
-  color: var(--tertiary-color);
-}
-
-.card {
-  min-width: 50%;
-  border: 0;
-}
-
-.carousel {
-  height: 45rem;
-  width: 100%;
-}
-
-.carousel__item {
-  position: relative;
-  height: 45rem;
-}
-
-.carousel__button {
-  left: 35%;
-  bottom: 50px;
-}
 
 /* estilos look combo index */
 
-.look-combo__detail {
-  height: 18rem;
-  align-items: center;
-  gap: 2rem;
-}
+
 
 /* estilos menu shop */
 
@@ -79,44 +32,6 @@
 
 /* estilos clothing */
 
-.split {
-  display: grid;
-  min-height: 90vh;
-  margin-top: 5rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
-
-.split__details {
-  display: flex;
-  flex-direction: column;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.split-details__title,
-.split-details__body,
-.split-details__footer {
-  line-height: 150%;
-  padding: 20px 20px 0 20px;
-  gap: 10px;
-  font-size: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0;
-}
-
-.split-details__body select,
-.split-details__body input {
-  font-size: 0.875rem;
-  border: 1px solid rgb(242, 242, 242);
-  padding: 0.75rem 1.5rem;
-  background-color: rgb(242, 242, 242);
-  width: 100%;
-  outline: rgba(0, 0, 0, 0);
-  border-radius: 0.5rem;
-  text-overflow: ellipsis;
-}
 
 /* estilos footer */
 

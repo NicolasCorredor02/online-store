@@ -1,0 +1,17 @@
+@import "variables";
+
+.carousel {
+    @include measurements(100%, 45rem);
+
+    .carousel__item {
+        position: relative;
+        @extend .carousel;
+    }
+    
+    .carousel__button {
+        left: 35%;
+        bottom: 50px;
+    }
+
+}
+
