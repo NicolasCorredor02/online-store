@@ -95,6 +95,12 @@ a {
   min-width: 50%;
   border: 0;
 }
+@media screen and (min-width: 992px) {
+  .card {
+    min-width: 25%;
+    border: 0;
+  }
+}
 
 .carousel, .carousel .carousel__item {
   width: 100%;
@@ -111,7 +117,7 @@ a {
 .look-combo__detail {
   height: 18rem;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .split {
@@ -120,6 +126,13 @@ a {
   margin-top: 5rem;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+}
+@media screen and (min-width: 992px) {
+  .split {
+    min-height: 60vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
 }
 
 .split__details {
@@ -140,6 +153,13 @@ a {
   flex-direction: column;
   margin: 10px 0;
 }
+@media screen and (min-width: 992px) {
+  .split-details__title,
+  .split-details__body,
+  .split-details__footer {
+    margin: 10px 5rem;
+  }
+}
 
 .split-details__body select,
 .split-details__body input {
@@ -148,20 +168,37 @@ a {
   padding: 0.75rem 1.5rem;
   background-color: rgb(242, 242, 242);
   width: 100%;
-  outline: rgba(0, 0, 0, 0);
+  height: auto;
+  outline: rgb(0, 0, 0);
   border-radius: 0.5rem;
   text-overflow: ellipsis;
 }
 
-/* estilos look combo index */
-/* estilos menu shop */
+@media screen and (min-width: 992px) {
+  .menu {
+    justify-content: space-between;
+  }
+  .menu-hamburger__button,
+  .menu-shop__button-filter {
+    display: none;
+  }
+}
 .menu-shop__button-container {
   height: 3.5rem;
-  border: 2px solid #f2f2f2;
+  border: 2px solid rgb(242, 242, 242);
   justify-content: center;
 }
+@media screen and (min-width: 992px) {
+  .menu-shop__button-container {
+    border: none;
+    justify-content: end;
+    font-size: 1.5rem;
+  }
+  .menu-shop__button-container li, .menu-shop__button-container ul {
+    font-size: 1.5rem;
+  }
+}
 
-/* estilos clothes shop */
 .clothes {
   margin-top: 10px;
   display: grid;
@@ -170,89 +207,65 @@ a {
   row-gap: 10px;
   column-gap: 10px;
 }
-
-/* estilos clothing */
-/* estilos footer */
-footer {
-  background-color: var(--tertiary-color);
-}
-
-footer a {
-  color: var(--pricipal-color);
-  text-decoration: none;
-}
-
-.footer__contact,
-.footer__info {
-  color: var(--pricipal-color);
-}
-
-.footer__contact input {
-  height: 20%;
-  padding: 1rem;
-  background-color: transparent;
-  border: 2px solid var(--pricipal-color);
-  border-radius: 5px;
-  color: var(--pricipal-color);
-  outline: var(--pricipal-color);
-}
-
-.footer__contact input::placeholder {
-  color: var(--pricipal-color);
-}
-
-.footer__contact [type=email]:focus {
-  background-color: transparent;
-  border: 2px solid var(--pricipal-color);
-  color: var(--secondary-color);
-}
-
-.footer__help,
-.footer__about {
-  color: var(--pricipal-color);
-  border-top: 2px solid var(--pricipal-color);
-  background-color: transparent;
-}
-
-/* MQ for desktop screen */
 @media screen and (min-width: 992px) {
-  .card {
-    min-width: 25%;
-    border: 0;
-  }
-  .menu {
-    justify-content: space-between;
-  }
-  .menu-hamburger__button,
-  .menu-shop__button-filter {
-    display: none;
-  }
-  .menu-shop__button-container {
-    height: 3.5rem;
-    border: none;
-    justify-content: end;
-  }
-  .canvas__body li,
-  .menu-shop__button-container,
-  .menu-shop__button-container ul {
-    font-size: 1.5rem;
-  }
   .clothes {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
-  .split {
-    min-height: 60vh;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-  }
-  .split-details__title,
-  .split-details__body,
-  .split-details__footer {
-    margin: 10px 5rem;
-  }
-  .footer__contact {
-    border-right: 2px solid var(--pricipal-color);
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+}
+footer a {
+  color: rgb(241, 193, 26);
+  text-decoration: none;
+}
+footer .footer__contact,
+footer .footer__info {
+  color: rgb(241, 193, 26);
+  text-align: center;
+}
+footer .footer__contact .footer__title,
+footer .footer__info .footer__title {
+  font-size: 2rem;
+}
+footer .footer__contact .footer__detail,
+footer .footer__info .footer__detail {
+  font-size: 1rem;
+}
+footer .footer__contact input,
+footer .footer__info input {
+  width: 100%;
+  height: 20%;
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid rgb(241, 193, 26);
+  border-radius: 5px;
+  color: rgb(241, 193, 26);
+  outline: rgb(241, 193, 26);
+}
+footer .footer__contact input::placeholder,
+footer .footer__info input::placeholder {
+  color: rgb(241, 193, 26);
+}
+footer .footer__contact [type=email]:focus,
+footer .footer__info [type=email]:focus {
+  background-color: transparent;
+  border: 2px solid rgb(241, 193, 26);
+  color: rgb(255, 255, 255);
+}
+footer .footer__contact .footer__help,
+footer .footer__contact .footer__about,
+footer .footer__info .footer__help,
+footer .footer__info .footer__about {
+  color: rgb(241, 193, 26);
+  border-top: 2px solid rgb(241, 193, 26);
+  background-color: transparent;
+}
+@media screen and (min-width: 992px) {
+  footer .footer__contact {
+    border-right: 2px solid rgb(241, 193, 26);
   }
 }
 

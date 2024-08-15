@@ -1,4 +1,5 @@
 @import "variables";
+@import "mediaquerys";
 
 //Large cards
 .card-large {
@@ -25,4 +26,10 @@
 .card {
     min-width: 50%;
     border: get-space-size(0);
+
+    @include media-up(lg){
+      min-width: 25%;
+      border: 0;
+    }
+    
   }

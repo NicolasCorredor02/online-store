@@ -1,0 +1,56 @@
+@import "variables";
+@import "mediaquerys";
+
+footer {
+  background-color: get-color(tertiary);
+
+  a {
+    color: get-color(primary);
+    text-decoration: none;
+  }
+
+  .footer__contact,
+  .footer__info {
+    color: get-color(primary);
+    text-align: center;
+    .footer__title {
+      font-size: get-size(h2-size);
+    }
+    .footer__detail {
+      font-size: get-size(h6-size);
+    }
+
+    input {
+      @include measurements(100%, 20%);
+      padding: $space-size;
+      background-color: transparent;
+      border: 2px solid get-color(primary);
+      border-radius: 5px;
+      color: get-color(primary);
+      outline: get-color(primary);
+    }
+
+    input::placeholder {
+      color: get-color(primary);
+    }
+
+    [type="email"]:focus {
+      background-color: transparent;
+      border: 2px solid get-color(primary);
+      color: get-color(secondary);
+    }
+
+    .footer__help,
+    .footer__about {
+      color: get-color(primary);
+      border-top: 2px solid get-color(primary);
+      background-color: transparent;
+    }
+  }
+
+  @include media-up(lg) {
+    .footer__contact {
+      border-right: 2px solid get-color(primary);
+    }
+  }
+}
