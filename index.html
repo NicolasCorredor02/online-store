@@ -15,12 +15,14 @@
   <header>
     <nav class="container navbar fixed-top px-2">
       <div class="menu row w-100 align-items-center">
+         <!-- Menu hamburguesa disponible solo para vista movil y tablet -->
         <div class="menu-hamburger__button col-2">
           <button class="btn fs-1 navbar__collapse-button px-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvas">
             <i class="navbar-toggler-icon"></i>
           </button>
         </div>
+        <!-- Canvas para la muestra del menu de hamburguesa -->
         <div class="canvas offcanvas offcanvas-start" tabindex="-1" id="offcanvas">
           <div class="canvas__header offcanvas-header">
             <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"></button>
@@ -57,6 +59,7 @@
             </div>
           </div>
         </div>
+        <!-- Menu de navegación para vista de escritorio -->
         <div class="col-2 col-lg-1 order-lg-4"><a href="./pages/login.html" class="btn navbar__login" type="button"><i
               class="bi bi-person fs-1"></i></a></div>
         <div class="col-4 col-lg-2 order-lg-1 text-center"><a class="navbar-brand fs-1 m-0"
@@ -93,6 +96,7 @@
     </nav>
   </header>
   <main>
+    <!-- seccion inicial para muestra de ropa  -->
     <section class="container-fluid text-center p-0">
       <div class="row card-large position-relative">
         <img class="card-large__img" src="./assets/images/13.webp" alt="muestra de conjunto para mujer">
@@ -119,6 +123,7 @@
         </div>
       </div>
     </section>
+    <!-- seccion de muestra de ropa nueva -->
     <section class="new container mt-5">
       <div class="new__title d-flex justify-content-between">
         <h2>New</h2>
@@ -169,6 +174,7 @@
         </div>
       </div>
     </section>
+    <!-- muestra de ropa para compra en combo -->
     <section class="split container-fluid container-lg mt-5 ">
       <h2 class="text-uppercase d-lg-none">the look combo</h2>
       <div class="carousel slide" id="carousel">
@@ -226,6 +232,7 @@
   </main>
   <footer class="container-fluid">
     <div class="row d-flex  flex-column flex-lg-row p-5">
+      <!-- seccion de contacto en el footer -->
       <div class="footer__contact col-lg-5 d-flex flex-column align-items-center gap-3 mb-4">
         <h2 class="footer__title display-5">Sign up for good news</h2>
         <p class="footer__detail">Exclusive pieces. Member discounts</p>
@@ -238,6 +245,7 @@
           <i class="bi bi-linkedin"></i>
         </div>
       </div>
+      <!-- seccion de informacion en el footer -->
       <div class="footer__info col-lg-6  ms-lg-5 navbar navbar-expand-lg">
         <button class="footer__about w-100 d-flex justify-content-between text-uppercase p-2 d-lg-none" type="button"
           data-bs-target="#footer__help-collapse" data-bs-toggle="collapse" aria-expanded="false"

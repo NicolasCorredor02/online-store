@@ -15,12 +15,14 @@
   <header>
     <nav class="container navbar fixed-top px-2">
       <div class="menu row w-100 align-items-center">
+        <!-- Menu hamburguesa disponible solo para vista movil y tablet -->
         <div class="menu-hamburger__button col-2">
           <button class="btn fs-1 navbar__collapse-button px-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvas">
             <i class="navbar-toggler-icon"></i>
           </button>
         </div>
+        <!-- Canvas para la muestra del menu de hamburguesa -->
         <div class="canvas offcanvas offcanvas-start" tabindex="-1" id="offcanvas">
           <div class="canvas__header offcanvas-header">
             <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"></button>
@@ -57,6 +59,7 @@
             </div>
           </div>
         </div>
+        <!-- Menu de navegación para vista de escritorio -->
         <div class="col-2 col-lg-1 order-lg-4"><a href="./login.html" class="btn navbar__login" type="button"><i
               class="bi bi-person fs-1"></i></a></div>
         <div class="col-4 col-lg-2 order-lg-1 text-center"><a class="navbar-brand fs-1 m-0"
@@ -94,16 +97,20 @@
   </header>
   <main>
     <section class="container-fluid container-lg p-0">
+      <!-- titulo de seccion de tienda -->
       <div class="row mt-5">
         <h1 class="col-12 text-center">SHOP</h1>
       </div>
+      <!-- seccion de menus de filtros -->
       <div class="menu row align-items-center">
         <div class="menu-shop__button-container navbar navbar-expand-lg  col-6 p-0">
+          <!-- boton de canvas -->
           <button class="menu-shop__button-filter btn  px-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvas__shop-filter">
             <i class="bi bi-funnel"></i>
             FILTER
           </button>
+          <!-- canvas de filtro -->
           <div class="canvas offcanvas offcanvas-start" tabindex="-1" id="offcanvas__shop-filter">
             <div class="canvas__header offcanvas-header">
               <p class="fs-1">Filter By</p>
@@ -217,7 +224,9 @@
         </div>
       </div>
     </section>
+    <!-- seccion de muestra de ropa -->
     <section class="clothes container-fluid container-lg p-0">
+      <!-- muestra de ropa a traves de cards -->
         <a href="./clothing.html">
           <div class="card">
             <img class="card__img card-img-top" src="../assets/images/5.webp" alt="">
@@ -322,6 +331,7 @@
   </main>
   <footer class="container-fluid">
     <div class="row d-flex  flex-column flex-lg-row p-5">
+      <!-- seccion de contacto en el footer -->
       <div class="footer__contact col-lg-5 d-flex flex-column align-items-center gap-3 mb-4">
         <h2 class="footer__title display-5">Sign up for good news</h2>
         <p class="footer__detail">Exclusive pieces. Member discounts</p>
@@ -334,6 +344,7 @@
           <i class="bi bi-linkedin"></i>
         </div>
       </div>
+      <!-- seccion de informacion en el footer -->
       <div class="footer__info col-lg-6  ms-lg-5 navbar navbar-expand-lg">
         <button class="footer__about w-100 d-flex justify-content-between text-uppercase p-2 d-lg-none" type="button"
           data-bs-target="#footer__help-collapse" data-bs-toggle="collapse" aria-expanded="false"

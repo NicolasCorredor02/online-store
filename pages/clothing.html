@@ -15,12 +15,14 @@
   <header>
     <nav class="container navbar fixed-top px-2">
       <div class="menu row w-100 align-items-center">
+        <!-- Menu hamburguesa disponible solo para vista movil y tablet -->
         <div class="menu-hamburger__button col-2">
           <button class="btn fs-1 navbar__collapse-button px-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvas">
             <i class="navbar-toggler-icon"></i>
           </button>
         </div>
+        <!-- Canvas para la muestra del menu de hamburguesa -->
         <div class="canvas offcanvas offcanvas-start" tabindex="-1" id="offcanvas">
           <div class="canvas__header offcanvas-header">
             <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"></button>
@@ -57,6 +59,7 @@
             </div>
           </div>
         </div>
+        <!-- Menu de navegación para vista de escritorio -->
         <div class="col-2 col-lg-1 order-lg-4"><a href="./login.html" class="btn navbar__login" type="button"><i
               class="bi bi-person fs-1"></i></a></div>
         <div class="col-4 col-lg-2 order-lg-1 text-center"><a class="navbar-brand fs-1 m-0"
@@ -94,6 +97,7 @@
   </header>
   <main>
     <section class="split container-fluid container-lg pb-5">
+      <!-- seccion para muestra de ropa a comprar -->
       <div class="carousel slide" id="carousel">
         <div class="carousel__container carousel-inner">
           <div class="carousel__item carousel-item active">
@@ -115,6 +119,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <!-- seccion de muestra de detalles sobre la ropa -->
       <div class="split-details">
         <div class="split-details__title">
           <h1>Men's T-shirt</h1>
@@ -150,7 +155,7 @@
             <i class="bi bi-plus-lg"></i>
           </button>
           <div class=" navbar-collapse" id="clothing__description-collapse">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reiciendis minus, veniam doloribus impedit ab soluta. Quisquam sunt eligendi rem fugiat, voluptatem inventore earum possimus distinctio? Ad amet accusantium optio!</p>
+            <p>Vestido ligero y fluido de algodón, con un estampado floral delicado en tonos pastel. Presenta un escote en V favorecedor y una falda acampanada que llega por encima de la rodilla. Los tirantes finos y ajustables permiten una comodidad personalizada.</p>
           </div>
           <button class="w-100 d-flex justify-content-between text-uppercase p-2" type="button"
             data-bs-target="#clothing__material-collapse" data-bs-toggle="collapse" aria-expanded="false"
@@ -159,7 +164,7 @@
             <i class="bi bi-plus-lg"></i>
           </button>
           <div class=" navbar-collapse" id="clothing__material-collapse">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reiciendis minus, veniam doloribus impedit ab soluta. Quisquam sunt eligendi rem fugiat, voluptatem inventore earum possimus distinctio? Ad amet accusantium optio!</p>
+            <p>Nuestro algodón es suave, transpirable y duradero. Perfecto para el uso diario, ya que absorbe la humedad y se adapta a tu cuerpo. Ideal para pieles sensibles.</p>
           </div>
         </div>
       </div>
@@ -167,6 +172,7 @@
   </main>
   <footer class="container-fluid">
     <div class="row d-flex  flex-column flex-lg-row p-5">
+      <!-- seccion de contacto en el footer -->
       <div class="footer__contact col-lg-5 d-flex flex-column align-items-center gap-3 mb-4">
         <h2 class="footer__title display-5">Sign up for good news</h2>
         <p class="footer__detail">Exclusive pieces. Member discounts</p>
@@ -179,6 +185,7 @@
           <i class="bi bi-linkedin"></i>
         </div>
       </div>
+      <!-- seccion de informacion en el footer -->
       <div class="footer__info col-lg-6  ms-lg-5 navbar navbar-expand-lg">
         <button class="footer__about w-100 d-flex justify-content-between text-uppercase p-2 d-lg-none" type="button"
           data-bs-target="#footer__help-collapse" data-bs-toggle="collapse" aria-expanded="false"
