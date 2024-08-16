@@ -95,6 +95,12 @@ a {
   min-width: 50%;
   border: 0;
 }
+@media screen and (min-width: 768px) {
+  .card {
+    min-width: 40%;
+    border: 0;
+  }
+}
 @media screen and (min-width: 992px) {
   .card {
     min-width: 25%;
@@ -127,6 +133,13 @@ a {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
+@media screen and (min-width: 768px) {
+  .split {
+    min-height: 80vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
 @media screen and (min-width: 992px) {
   .split {
     min-height: 60vh;
@@ -152,6 +165,13 @@ a {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .split-details__title,
+  .split-details__body,
+  .split-details__footer {
+    margin: 10px 4rem;
+  }
 }
 @media screen and (min-width: 992px) {
   .split-details__title,
@@ -195,7 +215,7 @@ a {
     font-size: 1.5rem;
   }
   .menu-shop__button-container li, .menu-shop__button-container ul {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -207,9 +227,15 @@ a {
   row-gap: 10px;
   column-gap: 10px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .clothes {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .clothes {
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
   }
 }
@@ -224,11 +250,11 @@ footer a {
 footer .footer__contact,
 footer .footer__info {
   color: rgb(241, 193, 26);
-  text-align: center;
 }
 footer .footer__contact .footer__title,
 footer .footer__info .footer__title {
   font-size: 2rem;
+  text-align: center;
 }
 footer .footer__contact .footer__detail,
 footer .footer__info .footer__detail {

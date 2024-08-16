@@ -14,6 +14,12 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
+  @include media-up(md){
+    min-height: 80vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
   @include media-up(lg) {
     min-height: 60vh;
     grid-template-columns: repeat(2, 1fr);
@@ -38,6 +44,10 @@
   display: flex;
   flex-direction: column;
   margin: 10px 0;
+
+  @include media-up(md){
+    margin: 10px $space-size * 4;
+  }
 
   @include media-up(lg){
     margin: 10px $space-size * 5;

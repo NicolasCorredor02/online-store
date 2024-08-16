@@ -22,7 +22,7 @@
     justify-content: end;
     font-size: get-size(h4-size);
     li, ul {
-      font-size: get-size(h4-size);
+      font-size: get-size(h5-size);
     }
   }
 }
@@ -36,8 +36,13 @@
   row-gap: 10px;
   column-gap: 10px;
 
-  @include media-up(lg){
+  @include media-up(md){
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  @include media-up(lg){
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
   }
 }

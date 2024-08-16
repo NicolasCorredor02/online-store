@@ -27,9 +27,14 @@
     min-width: 50%;
     border: get-space-size(0);
 
+  @include media-up(md){
+    min-width: 40%;
+    border: get-space-size(0);
+  }
+
     @include media-up(lg){
       min-width: 25%;
-      border: 0;
+      border: get-space-size(0);
     }
     
   }

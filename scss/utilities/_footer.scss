@@ -12,9 +12,10 @@ footer {
   .footer__contact,
   .footer__info {
     color: get-color(primary);
-    text-align: center;
+    
     .footer__title {
       font-size: get-size(h2-size);
+      text-align: center;
     }
     .footer__detail {
       font-size: get-size(h6-size);
