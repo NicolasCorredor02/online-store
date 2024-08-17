@@ -7,6 +7,10 @@ footer {
   a {
     color: get-color(primary);
     text-decoration: none;
+    transition: 350ms;
+    &:hover{
+      transform: translate(5px,0);
+    }
   }
 
   .footer__contact,

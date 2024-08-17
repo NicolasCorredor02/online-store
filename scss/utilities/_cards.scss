@@ -20,12 +20,14 @@
 
 
 //Small cards
-.new__title a {
-    color: get-color(tertiary);
-  }
 .card {
     min-width: 50%;
     border: get-space-size(0);
+    background-color: transparent;
+    transition: 350ms;
+    &:hover{
+      transform: scale(1.05,1.05);
+    }
 
   @include media-up(md){
     min-width: 40%;

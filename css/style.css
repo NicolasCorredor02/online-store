@@ -17,6 +17,40 @@ a {
   text-decoration: none;
 }
 
+.new__title p {
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.new__title p:hover {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    justify-content: space-between;
+  }
+  .menu-hamburger__button,
+  .menu-shop__button-filter {
+    display: none;
+  }
+}
+.menu-shop__button-container {
+  height: 3.5rem;
+  border: 2px solid rgb(242, 242, 242);
+  justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  .menu-shop__button-container {
+    border: none;
+    justify-content: end;
+    font-size: 1.5rem;
+  }
+  .menu-shop__button-container li,
+  .menu-shop__button-container ul {
+    font-size: 1.25rem;
+  }
+}
+
 .root-button, .fourth-button, .tertiary-button, .secondary-button, .principal-button {
   padding: 1rem 2.5rem;
   border-radius: 2rem;
@@ -87,13 +121,14 @@ a {
   bottom: 50px;
 }
 
-.new__title a {
-  color: rgb(0, 0, 0);
-}
-
 .card {
   min-width: 50%;
   border: 0;
+  background-color: transparent;
+  transition: 350ms;
+}
+.card:hover {
+  transform: scale(1.05, 1.05);
 }
 @media screen and (min-width: 768px) {
   .card {
@@ -194,31 +229,6 @@ a {
   text-overflow: ellipsis;
 }
 
-@media screen and (min-width: 992px) {
-  .menu {
-    justify-content: space-between;
-  }
-  .menu-hamburger__button,
-  .menu-shop__button-filter {
-    display: none;
-  }
-}
-.menu-shop__button-container {
-  height: 3.5rem;
-  border: 2px solid rgb(242, 242, 242);
-  justify-content: center;
-}
-@media screen and (min-width: 992px) {
-  .menu-shop__button-container {
-    border: none;
-    justify-content: end;
-    font-size: 1.5rem;
-  }
-  .menu-shop__button-container li, .menu-shop__button-container ul {
-    font-size: 1.25rem;
-  }
-}
-
 .clothes {
   margin-top: 10px;
   display: grid;
@@ -246,6 +256,10 @@ footer {
 footer a {
   color: rgb(241, 193, 26);
   text-decoration: none;
+  transition: 350ms;
+}
+footer a:hover {
+  transform: translate(5px, 0);
 }
 footer .footer__contact,
 footer .footer__info {

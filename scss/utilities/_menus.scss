@@ -1,0 +1,42 @@
+@import "variables";
+@import "mediaquerys";
+
+.new__title {
+    p {
+        color: get-color(tertiary);
+        border-bottom: 2px solid get-color(tertiary);
+        &:hover{
+            border-bottom: none;
+        }
+    }
+}
+
+//General header menu
+@include media-up(lg) {
+    .menu {
+        justify-content: space-between;
+    }
+
+    .menu-hamburger__button,
+    .menu-shop__button-filter {
+        display: none;
+    }
+}
+
+//Menu shop layout
+.menu-shop__button-container {
+    height: $space-size * 3.5;
+    border: 2px solid get-color(fourth);
+    justify-content: center;
+
+    @include media-up(lg) {
+        border: none;
+        justify-content: end;
+        font-size: get-size(h4-size);
+
+        li,
+        ul {
+            font-size: get-size(h5-size);
+        }
+    }
+}
