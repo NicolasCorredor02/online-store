@@ -62,3 +62,9 @@
   background-color: get-color(tertiary);
   border: 2px solid get-color(tertiary);
 }
+
+.collapse-button{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid get-color(fourth);
+}

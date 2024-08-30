@@ -12,14 +12,13 @@
 }
 
 //General header menu
-@include media-up(lg) {
-    .menu {
-        justify-content: space-between;
-    }
-
+.menu{
+    justify-content: space-between;
+    @include media-up(lg){ 
     .menu-hamburger__button,
     .menu-shop__button-filter {
         display: none;
+    }
     }
 }
 
@@ -37,6 +36,14 @@
         li,
         ul {
             font-size: get-size(h5-size);
+        }
+    }
+}
+
+.canvas__body{
+    @include media-up(lg){
+        li{
+            font-size: get-size(h4-size);
         }
     }
 }

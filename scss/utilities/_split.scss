@@ -10,7 +10,6 @@
 .split {
   display: grid;
   min-height: 90vh;
-  margin-top: $space-size * 5;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
@@ -27,11 +26,40 @@
   }
 }
 
+.split--form{
+  @extend .split;
+  margin-top: $space-size * 5;
+}
+
 .split__details {
   display: flex;
   flex-direction: column;
+  @include measurements(80vh,auto);
   padding-top: get-space-size(7);
   padding-bottom: get-space-size(7);
+}
+
+.split-details__body{
+  div{
+    display: flex;
+    gap: 20px;
+    margin-top: get-space-size(3);
+    align-items: baseline;
+    font-size: get-size(h1-size);
+    div{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items:start;
+      h2{
+        font-size:get-size(h4-size);
+      }
+      p{
+        font-size: get-size(h6-size);
+        font-weight: normal;
+      }
+    }
+  }
 }
 
 .split-details__title,

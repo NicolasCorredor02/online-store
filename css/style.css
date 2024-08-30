@@ -25,15 +25,16 @@ a {
   border-bottom: none;
 }
 
+.menu {
+  justify-content: space-between;
+}
 @media screen and (min-width: 992px) {
-  .menu {
-    justify-content: space-between;
-  }
-  .menu-hamburger__button,
-  .menu-shop__button-filter {
+  .menu .menu-hamburger__button,
+  .menu .menu-shop__button-filter {
     display: none;
   }
 }
+
 .menu-shop__button-container {
   height: 3.5rem;
   border: 2px solid rgb(242, 242, 242);
@@ -48,6 +49,12 @@ a {
   .menu-shop__button-container li,
   .menu-shop__button-container ul {
     font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .canvas__body li {
+    font-size: 1.5rem;
   }
 }
 
@@ -109,6 +116,12 @@ a {
   border: 2px solid rgb(0, 0, 0);
 }
 
+.collapse-button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(242, 242, 242);
+}
+
 .card-large {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -119,6 +132,19 @@ a {
 }
 .card-large .card-large__details {
   bottom: 50px;
+}
+.card-large .card-large__details--member {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  height: auto;
+  left: 3rem;
+  bottom: 350px;
+  left: 10%;
+}
+.card-large .card-large__details--member h1 {
+  font-size: 3.5rem;
 }
 
 .card {
@@ -161,33 +187,59 @@ a {
   gap: 1rem;
 }
 
-.split {
+.split, .split--form {
   display: grid;
   min-height: 90vh;
-  margin-top: 5rem;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
 @media screen and (min-width: 768px) {
-  .split {
+  .split, .split--form {
     min-height: 80vh;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
 }
 @media screen and (min-width: 992px) {
-  .split {
+  .split, .split--form {
     min-height: 60vh;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
   }
 }
 
+.split--form {
+  margin-top: 5rem;
+}
+
 .split__details {
   display: flex;
   flex-direction: column;
+  width: 80vh;
+  height: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.split-details__body div {
+  display: flex;
+  gap: 20px;
+  margin-top: 0.75rem;
+  align-items: baseline;
+  font-size: 2.5rem;
+}
+.split-details__body div div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+.split-details__body div div h2 {
+  font-size: 1.5rem;
+}
+.split-details__body div div p {
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .split-details__title,
