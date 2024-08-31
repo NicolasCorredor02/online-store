@@ -221,23 +221,23 @@ a {
   padding-bottom: 2.5rem;
 }
 
-.split-details__body div {
+.split-details__body--member div {
   display: flex;
   gap: 20px;
   margin-top: 0.75rem;
   align-items: baseline;
   font-size: 2.5rem;
 }
-.split-details__body div div {
+.split-details__body--member div div {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: start;
 }
-.split-details__body div div h2 {
+.split-details__body--member div div h2 {
   font-size: 1.5rem;
 }
-.split-details__body div div p {
+.split-details__body--member div div p {
   font-size: 1rem;
   font-weight: normal;
 }
