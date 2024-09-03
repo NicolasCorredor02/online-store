@@ -10,13 +10,26 @@
   row-gap: 10px;
   column-gap: 10px;
 
-  @include media-up(md){
+  @include media-min(md){
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
 
-  @include media-up(lg){
+  @include media-min(lg){
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
+  }
+}
+
+.faq{
+  @include measurements(80%, auto);
+  margin: get-space-size(8) auto;
+
+  @include media-min(lg){
+    @include measurements(50%, auto);
+  }
+
+  .faq__title{
+    text-align: center;
   }
 }

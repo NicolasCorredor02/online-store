@@ -14,7 +14,7 @@
 //General header menu
 .menu{
     justify-content: space-between;
-    @include media-up(lg){ 
+    @include media-min(lg){ 
     .menu-hamburger__button,
     .menu-shop__button-filter {
         display: none;
@@ -28,7 +28,7 @@
     border: 2px solid get-color(fourth);
     justify-content: center;
 
-    @include media-up(lg) {
+    @include media-min(lg) {
         border: none;
         justify-content: end;
         font-size: get-size(h4-size);
@@ -41,7 +41,7 @@
 }
 
 .canvas__body{
-    @include media-up(lg){
+    @include media-min(lg){
         li{
             font-size: get-size(h4-size);
         }

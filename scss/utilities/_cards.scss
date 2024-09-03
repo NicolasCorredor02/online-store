@@ -33,22 +33,37 @@
 
 //Small cards
 .card {
-    min-width: 50%;
+    min-width: 60%;
     border: get-space-size(0);
     background-color: transparent;
     transition: 350ms;
     &:hover{
-      transform: scale(1.05,1.05);
+      transform: scale(1.05, 1.05);
     }
 
-  @include media-up(md){
+  @include media-min(md){
     min-width: 40%;
     border: get-space-size(0);
   }
 
-    @include media-up(lg){
+    @include media-min(lg){
       min-width: 25%;
       border: get-space-size(0);
     }
     
+    .card__img{
+      min-height: 60%;
+    }
+
+    .card__body{
+      min-height: 30%;
+
+      @include media-max(md){
+        .card__title,
+        .card__price{
+          font-size: get-size(h6-size);
+        }
+      }
+      
+    }
   }

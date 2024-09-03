@@ -6,9 +6,15 @@ $breakpoints:(
     lg:992px
 );
 
-@mixin media-up($breakpoint){
+@mixin media-min($breakpoint){
     @media screen and (min-width: map-get($breakpoints,$breakpoint)) {
         @content;
+    }
+}
+
+@mixin media-max($breakpoint){
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)){
+        @content;        
     }
 }
 

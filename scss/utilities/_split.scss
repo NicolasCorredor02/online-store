@@ -13,17 +13,22 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
-  @include media-up(md){
+  @include media-min(md){
     min-height: 80vh;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
 
-  @include media-up(lg) {
+  @include media-min(lg) {
     min-height: 60vh;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
   }
+}
+
+#split-clothing{
+  @extend .split;
+  margin-top: $space-size * 6.8;
 }
 
 .split--form{
@@ -34,12 +39,15 @@
 .split__details {
   display: flex;
   flex-direction: column;
-  @include measurements(80vh,auto);
+  margin-top: get-space-size(8);
+  @include measurements(100%, auto);
   padding-top: get-space-size(7);
   padding-bottom: get-space-size(7);
+
 }
 
 .split-details__body--member{
+  padding: 0 get-space-size(8);
   div{
     display: flex;
     gap: 20px;
@@ -73,11 +81,11 @@
   flex-direction: column;
   margin: 10px 0;
 
-  @include media-up(md){
+  @include media-min(md){
     margin: 10px $space-size * 4;
   }
 
-  @include media-up(lg){
+  @include media-min(lg){
     margin: 10px $space-size * 5;
   }
 }
