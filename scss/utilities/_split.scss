@@ -82,11 +82,11 @@
   margin: 10px 0;
 
   @include media-min(md){
-    margin: 10px $space-size * 4;
+    margin-left: get-space-size(6);
   }
 
   @include media-min(lg){
-    margin: 10px $space-size * 5;
+    margin-left: get-space-size(8);
   }
 }
 

@@ -339,6 +339,12 @@ a {
 .card-large .card-large__details--member h1 {
   font-size: 3.5rem;
 }
+.card-large .card-large__details--member div {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 150px));
+  gap: 20px;
+}
 
 .card {
   min-width: 60%;
@@ -470,14 +476,14 @@ a {
   .split-details__title,
   .split-details__body,
   .split-details__footer {
-    margin: 10px 4rem;
+    margin-left: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
   .split-details__title,
   .split-details__body,
   .split-details__footer {
-    margin: 10px 5rem;
+    margin-left: 3rem;
   }
 }
 

@@ -25,6 +25,13 @@
     h1{
       font-size: get-size(h0-size);
     }
+
+    div{
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 150px));
+      gap: 20px;
+    }
   }
 }
 
